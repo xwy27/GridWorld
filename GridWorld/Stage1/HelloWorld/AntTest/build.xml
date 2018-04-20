@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<project name = "HelloWorld" default = "run" basedir = ".">
+	<property name = "src" value = "src"/>
+	<property name = "class" value = "class"/>
+	<property name = "lib" value = "lib"/>
+	<property name = "dist" value = "dist"/>
+	<property name = "jar" value = "hello.jar"/>
+	
+	<target name = "init">
+		<echo>
+		============================
+		||
+		||	Creating Folders
+		||
+		============================
+		</echo>
+
+		<mkdir dir = "${class}"/>	
+		<mkdir dir = "${lib}"/>
+		<mkdir dir = "${dist}"/>
+	</target>
+
+	<target name = "compile" depends = "init">
+		<echo>
+		============================
+		||
+		||	Compiling
+		||
+		============================
+		</echo>
+
+		<javac srcdir = "${src}" destdir = "${class}"/>
+	</target>
+	
+	<target name = "build" depends = "compile">
+		<echo>
+		============================
+		||
+		||	Building
+		||
+		============================
+		</echo>
+		
+		<jar jarfile = "${dist}/${jar}" basedir = "${class}"/>
+	</target>
+	
+	<target name = "run" depends = "build">
+		<echo>
+		============================
+		||
+		||	Run
+		||
+		============================
+		</echo>
+		
+		<java classname = "HelloWorld" classpath = "${dist}/${jar}"/>
+	</target>
+</project>

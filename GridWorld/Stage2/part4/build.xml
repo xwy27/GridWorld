@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="Part4" default="help" basedir=".">
+	<property name="class" value="class"/>
+
+	<property name="King" value="KingCrab" />
+	<property name="Rock" value="RockHound" />
+	<property name="Quick" value="QuickCrab" />
+	<property name="Crab" value="CrabCritter" />
+	<property name="Bluster" value="BlusterCritter" />
+	<property name="Chameleon" value="ChameleonKid" />
+	<property name="Modified" value="ModifiedChameleonCritter" />
+	
+	<target name="help">
+		<echo>
+		=====================================
+		||
+		||	Ant Usage:
+		||		ant compile
+		||	
+		=====================================
+		</echo>
+	</target>
+
+	<target name="compile">
+		<echo>
+		=====================================
+		||
+		||	Compiling
+		||
+		=====================================
+		</echo>
+
+		<mkdir dir="${class}/${King}" />
+		<mkdir dir="${class}/${Rock}" />
+		<mkdir dir="${class}/${Quick}" />
+		<mkdir dir="${class}/${Modified}" />
+		<mkdir dir="${class}/${Bluster}" />
+		<mkdir dir="${class}/${Chameleon}" />
+
+		<javac srcdir="${Modified}" destdir="${class}/${Chameleon}"/>
+		<javac srcdir="${Modified}" destdir="${class}/${Modified}"/>
+		<javac srcdir="${Chameleon}" destdir="${class}/${Chameleon}"/>
+		<javac srcdir="${Bluster}" destdir="${class}/${Bluster}"/>
+		<javac srcdir="${Rock}" destdir="${class}/${Rock}"/>
+		<javac srcdir="${Crab}" destdir="${class}/${Quick}"/>
+		<javac srcdir="${Quick}" destdir="${class}/${Quick}"/>
+		<javac srcdir="${Crab}" destdir="${class}/${King}"/>
+		<javac srcdir="${King}" destdir="${class}/${King}"/>
+	</target>
+</project>
