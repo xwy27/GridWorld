@@ -1,5 +1,0 @@
-vim ~/.bashrc
-
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_91
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:/home/administrator/Downloads/GridWorld/Stage1/HelloWorld/junit-4.9.jar:$JAVA_HOME/lib/Number.jar:$CLASSPATH
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOME/bin
