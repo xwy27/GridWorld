@@ -1,2 +1,0 @@
-# GridWorld
-SYSU-GridWorld
