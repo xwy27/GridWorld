@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="Calculator" default="help" basedir=".">
+	<property name="class" value="class"/>
+
+	<property name="circle" value="CircleBug"/>
+	<property name="dance" value="DancingBug"/>
+	<property name="spiral" value="SpiralBug"/>
+	<property name="z" value="ZBug"/>
+	
+	<target name="help">
+		<echo>
+		============================
+		||
+		||	Ant Usage:
+		||		ant compile
+		||
+		============================
+		</echo>
+
+	</target>
+
+	<target name="compile">
+		<echo>
+		============================
+		||
+		||	Compiling
+		||
+		============================
+		</echo>
+
+		<mkdir dir="${class}"/>
+		<mkdir dir="${class}/${circle}"/>
+		<mkdir dir="${class}/${dance}"/>
+		<mkdir dir="${class}/${spiral}"/>
+		<mkdir dir="${class}/${z}"/>
+
+		<javac srcdir="${circle}" destdir="${class}/${circle}"/>
+		<javac srcdir="${dance}" destdir="${class}/${dance}"/>
+		<javac srcdir="${spiral}" destdir="${class}/${spiral}"/>
+		<javac srcdir="${z}" destdir="${class}/${z}"/>
+	</target>
+</project>
