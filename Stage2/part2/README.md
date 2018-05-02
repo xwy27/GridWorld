@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 - [Part 2](#part-2)
+    - [Preparation](#preparation)
     - [Usage](#usage)
     - [Bugs](#bugs)
         - [CircleBug](#circlebug)
@@ -11,6 +12,11 @@
         - [ZBug](#zbug)
 
 <!-- /TOC -->
+
+## Preparation
+
+1. ```Number.jar``` is required.
+1. ```gridworld.jar``` is required.
 
 ## Usage
 

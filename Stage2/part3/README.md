@@ -3,10 +3,16 @@
 <!-- TOC -->
 
 - [Part 3](#part-3)
+    - [Preparation](#preparation)
     - [Usage](#usage)
     - [Jumper](#jumper)
 
 <!-- /TOC -->
+
+## Preparation
+
+1. ```Number.jar``` is required.
+1. ```gridworld.jar``` is required.
 
 ## Usage
 

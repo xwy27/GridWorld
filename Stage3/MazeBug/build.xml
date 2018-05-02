@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="MazeBug" default="help" basedir=".">
+	<property name="class" value="class"/>
+	<property name="src" value="src"/>
+	
+	<target name="help">
+		<echo>
+		=====================================
+		||
+		||	Ant Usage:
+		||		ant compile
+		||	
+		=====================================
+		</echo>
+	</target>
+
+	<target name="compile">
+		<echo>
+		============================
+		||
+		||	Compiling
+		||
+		============================
+		</echo>
+		
+		<mkdir dir="${class}"/>	
+		<javac srcdir="${src}" destdir="${class}"/>
+	</target>
+</project>

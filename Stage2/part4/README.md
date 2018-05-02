@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 - [Part 4](#part-4)
+    - [Preparation](#preparation)
     - [Usage](#usage)
     - [Critters](#critters)
         - [ModifiedChameleonCritter](#modifiedchameleoncritter)
@@ -14,6 +15,11 @@
         - [KingCrab](#kingcrab)
 
 <!-- /TOC -->
+
+## Preparation
+
+1. ```Number.jar``` is required.
+1. ```gridworld.jar``` is required.
 
 ## Usage
 

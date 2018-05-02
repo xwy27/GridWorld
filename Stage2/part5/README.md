@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 - [Part 5](#part-5)
+    - [Preparation](#preparation)
     - [Usage](#usage)
     - [SparseGrid](#sparsegrid)
         - [SparseBoundedGrid](#sparseboundedgrid)
@@ -10,6 +11,11 @@
         - [UnboundedGrid](#unboundedgrid)
 
 <!-- /TOC -->
+
+## Preparation
+
+1. ```Number.jar``` is required.
+1. ```gridworld.jar``` is required.
 
 ## Usage
 
